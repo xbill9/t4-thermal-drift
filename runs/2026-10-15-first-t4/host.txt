@@ -1,0 +1,8 @@
+name, driver_version, memory.total [MiB], power.limit [W], persistence_mode, serial
+Tesla T4, 615.71.09, 15360 MiB, 70.00 W, Enabled, 1564520030363
+vllm 0.29.0 torch 2.13.0+cu130
+235e0e09c5412e65c61ac1c791a1ea80ecbb517bb3d22427c3444a8181ce2c81  /home/xbill_glitnir_com/gemma4-dev/gpu-vllm-t4-2b-w4a16/tpu.env
+674ec95c4b0210d5cd45d2793f7e47f3a369f29d
+GPU clocks set to "(gpuClkMin 1200, gpuClkMax 1200)" for GPU 00000000:00:04.0
+All done.
+All done.

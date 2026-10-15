@@ -1,0 +1,7 @@
+begin {'kind': 'soak', 'args': {'cmd': 'soak', 'out': 'runs/2026-10-15-first-t4/soak-unlocked-1', 'minutes': 20, 'lock': 0, 'start_below': 50}, 'model': 'xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4'}
+server-start {'tag': 'soak', 'draft': None, 'n': None}
+server-healthy {'tag': 'soak'}
+soak-start {'temp_c': 56}
+10 110.8 (68, 1455)
+20 107.1 (74, 1425)
+30 103.4 (79, 1410)
