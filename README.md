@@ -10,6 +10,10 @@ the card to 50 °C before each server agreed within 1%. Across that run's no-dra
 decode rate against temperature correlates at r = −0.94. The clock was read once per request,
 after it finished, so those readings cannot show the mechanism.
 
+**Hypothesis** (from NVIDIA's own documentation, `LITERATURE.md`): a hotter chip leaks more
+current, so it draws more power at the same clock, and the T4's 70 W cap pulls the clock down
+well before the ~85 °C thermal throttle. Under load this should show as SW Power Cap.
+
 ## Method (`thermal.py`)
 
 Each run logs temperature, SM and memory clocks, power, clock event reasons, utilization and
