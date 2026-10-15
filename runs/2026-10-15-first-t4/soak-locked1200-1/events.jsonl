@@ -1,0 +1,7 @@
+{"t": 1792083663.1387973, "event": "begin", "kind": "soak", "args": {"cmd": "soak", "out": "runs/2026-10-15-first-t4/soak-locked1200-1", "minutes": 20, "lock": 1200, "start_below": 50}, "model": "xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4"}
+{"t": 1792084076.2263424, "event": "lock", "mhz": 1200}
+{"t": 1792084076.2264457, "event": "server-start", "tag": "soak", "draft": null, "n": null}
+{"t": 1792084191.4686532, "event": "server-healthy", "tag": "soak"}
+{"t": 1792084191.7943127, "event": "soak-start", "temp_c": 64}
+{"t": 1792085392.787766, "event": "soak-end", "requests": 479, "temp_c": 76}
+{"t": 1792085410.2800803, "event": "unlock"}

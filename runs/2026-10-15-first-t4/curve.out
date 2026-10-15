@@ -1,0 +1,15 @@
+begin {'kind': 'curve', 'args': {'cmd': 'curve', 'out': 'runs/2026-10-15-first-t4/curve', 'clocks': '1590,1500,1395,1305,1230,1110', 'requests': 10, 'start_below': 50}, 'model': 'xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4'}
+server-start {'tag': 'curve', 'draft': None, 'n': None}
+server-healthy {'tag': 'curve'}
+cool: still 73 C after 1800 s, going on
+lock {'mhz': 1590, 'temp_c': 74}
+point-end {'mhz': 1590, 'temp_c': 80}
+cool: still 76 C after 1800 s, going on
+lock {'mhz': 1500, 'temp_c': 76}
+point-end {'mhz': 1500, 'temp_c': 78}
+cool: still 72 C after 1800 s, going on
+lock {'mhz': 1395, 'temp_c': 73}
+point-end {'mhz': 1395, 'temp_c': 81}
+cool: still 72 C after 1800 s, going on
+lock {'mhz': 1305, 'temp_c': 72}
+point-end {'mhz': 1305, 'temp_c': 81}

@@ -2,3 +2,5 @@
 {"t": 1792082353.4575357, "event": "server-start", "tag": "soak", "draft": null, "n": null}
 {"t": 1792082448.5190134, "event": "server-healthy", "tag": "soak"}
 {"t": 1792082448.8353708, "event": "soak-start", "temp_c": 56}
+{"t": 1792083650.896263, "event": "soak-end", "requests": 486, "temp_c": 77}
+{"t": 1792083662.7122545, "event": "unlock"}
