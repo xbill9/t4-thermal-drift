@@ -13,3 +13,10 @@ point-end {'mhz': 1395, 'temp_c': 81}
 cool: still 72 C after 1800 s, going on
 lock {'mhz': 1305, 'temp_c': 72}
 point-end {'mhz': 1305, 'temp_c': 81}
+cool: still 74 C after 1800 s, going on
+lock {'mhz': 1230, 'temp_c': 74}
+point-end {'mhz': 1230, 'temp_c': 80}
+cool: still 72 C after 1800 s, going on
+lock {'mhz': 1110, 'temp_c': 72}
+point-end {'mhz': 1110, 'temp_c': 81}
+unlock {}

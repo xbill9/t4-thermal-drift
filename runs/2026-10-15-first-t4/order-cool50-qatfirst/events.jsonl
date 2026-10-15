@@ -1,0 +1,10 @@
+{"t": 1792098458.213557, "event": "begin", "kind": "order", "args": {"cmd": "order", "out": "runs/2026-10-15-first-t4/order-cool50-qatfirst", "first": "qat-n3", "cool": 50, "lock": 0, "start_below": 50}, "model": "xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4"}
+{"t": 1792098629.358767, "event": "server-start", "tag": "qat-n3", "draft": "google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant", "n": 3}
+{"t": 1792098734.4196334, "event": "server-healthy", "tag": "qat-n3"}
+{"t": 1792098734.6121733, "event": "arm-start", "arm": "qat-n3", "temp_c": 56}
+{"t": 1792098765.2976582, "event": "arm-end", "arm": "qat-n3", "temp_c": 71}
+{"t": 1792098962.6999204, "event": "server-start", "tag": "none", "draft": null, "n": null}
+{"t": 1792099057.7226706, "event": "server-healthy", "tag": "none"}
+{"t": 1792099058.0245113, "event": "arm-start", "arm": "none", "temp_c": 55}
+{"t": 1792099097.0690157, "event": "arm-end", "arm": "none", "temp_c": 71}
+{"t": 1792099108.2178242, "event": "unlock"}

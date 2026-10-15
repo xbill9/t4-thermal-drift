@@ -4,3 +4,15 @@
 2026-10-15T17:01:02Z START soak-locked1200-1
 2026-10-15T17:30:10Z END soak-locked1200-1 rc=0
 2026-10-15T17:30:10Z START curve
+2026-10-15T20:35:22Z END curve rc=0
+2026-10-15T20:35:22Z START order-nocool-nonefirst
+2026-10-15T20:45:41Z END order-nocool-nonefirst rc=0
+2026-10-15T20:45:41Z START order-nocool-qatfirst
+2026-10-15T20:54:39Z END order-nocool-qatfirst rc=0
+2026-10-15T20:54:39Z START order-cool50-nonefirst
+2026-10-15T21:07:37Z END order-cool50-nonefirst rc=0
+2026-10-15T21:07:37Z START order-cool50-qatfirst
+2026-10-15T21:18:28Z END order-cool50-qatfirst rc=0
+2026-10-15T21:18:28Z START order-lock1200-nonefirst
+2026-10-15T21:44:49Z END order-lock1200-nonefirst rc=143
+2026-10-15T21:44:49Z START order-lock1200-qatfirst

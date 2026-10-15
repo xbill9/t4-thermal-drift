@@ -25,7 +25,7 @@ of generation can be matched to the clock and temperature at that moment.
 The clock lock is always released (sudo nvidia-smi -rgc) on exit, including on error.
 """
 
-import argparse, hashlib, json, os, subprocess, sys, time
+import argparse, hashlib, json, os, signal, subprocess, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from serve import load_env, start, stop, stream_chat  # noqa: E402
@@ -186,10 +186,10 @@ def order(a):
     env = r.env
     arms = ["none", "qat-n3"] if a.first == "none" else ["qat-n3", "none"]
     try:
+        cool(a.start_below)  # every condition starts from the same card; a locked clock idles too hot to cool
         if a.lock:
             lock(a.lock)
             r.event("lock", mhz=a.lock)
-        cool(a.start_below)  # every condition starts from the same card
         for arm in arms:
             if a.cool and arm != arms[0]:
                 cool(a.cool)
@@ -210,6 +210,8 @@ def order(a):
 
 
 def main():
+    # SIGTERM as SystemExit, so the finally blocks release the clock lock and stop the sampler
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(143))
     ap = argparse.ArgumentParser()
     sp = ap.add_subparsers(dest="cmd", required=True)
     p = sp.add_parser("soak")

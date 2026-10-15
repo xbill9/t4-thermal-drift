@@ -9,3 +9,8 @@
 {"t": 1792091003.1166823, "event": "point-end", "mhz": 1395, "temp_c": 81}
 {"t": 1792092807.2567146, "event": "lock", "mhz": 1305, "temp_c": 72}
 {"t": 1792092837.3209615, "event": "point-end", "mhz": 1305, "temp_c": 81}
+{"t": 1792094642.3490827, "event": "lock", "mhz": 1230, "temp_c": 74}
+{"t": 1792094672.6704938, "event": "point-end", "mhz": 1230, "temp_c": 80}
+{"t": 1792096477.1944616, "event": "lock", "mhz": 1110, "temp_c": 72}
+{"t": 1792096508.5584407, "event": "point-end", "mhz": 1110, "temp_c": 81}
+{"t": 1792096522.3388188, "event": "unlock"}

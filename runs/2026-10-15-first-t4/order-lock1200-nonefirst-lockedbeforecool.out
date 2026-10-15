@@ -1,0 +1,2 @@
+begin {'kind': 'order', 'args': {'cmd': 'order', 'out': 'runs/2026-10-15-first-t4/order-lock1200-nonefirst', 'first': 'none', 'cool': 0, 'lock': 1200, 'start_below': 50}, 'model': 'xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4'}
+lock {'mhz': 1200}
