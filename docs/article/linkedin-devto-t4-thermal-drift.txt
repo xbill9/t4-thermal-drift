@@ -1,0 +1,13 @@
+Don't Assume Your Cloud T4 Runs at Spec: Gemma 4 Decode Falls 7% as the Card Warms
+
+The same Tesla T4 on the same Google Cloud VM decoded Gemma 4 E2B at 115 tokens/s at 45 °C and 107 at 77 °C. The card sits at its 70 W limit, a hotter chip draws more power at the same clock, so the clock drops. No thermal throttle fires, and no spec sheet mentions it.
+
+What is in it:
+
+- ❌ Decode fell 7.4%, from 115.3 to 106.8 tokens per second, as the card warmed from 45 °C to its steady 77 °C, and 6.3% in a second soak that started warmer
+- ⚠️ The card sits at its 70 W limit from the first request. At a held 1,200 MHz it drew 4.0 W more at 78 °C than at 66 °C, so the limit pulls the clock down as it heats
+- 🟢 No thermal throttle fired in 154,815 samples, and the hottest reading was 83 °C
+- ⚠️ Locking the clock at 1,200 MHz cut the drift to 0.7% and cost 2.5% against hot and unlocked
+
+dev.to (Google Developer Experts): https://dev.to/gde/dont-assume-your-cloud-t4-runs-at-spec-gemma-4-decode-falls-7-as-the-card-warms-3fd3
+Medium: https://xbill999.medium.com/dont-assume-your-cloud-t4-runs-at-spec-gemma-4-decode-falls-7-as-the-card-warms-f49079f5d54e
