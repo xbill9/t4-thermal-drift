@@ -1,0 +1,2 @@
+devto_gde = https://dev.to/gde/dont-assume-your-cloud-t4-runs-at-spec-gemma-4-decode-falls-7-as-the-card-warms-3fd3
+medium = PENDING
