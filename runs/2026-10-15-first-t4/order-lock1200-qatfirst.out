@@ -1,3 +1,11 @@
 begin {'kind': 'order', 'args': {'cmd': 'order', 'out': 'runs/2026-10-15-first-t4/order-lock1200-qatfirst', 'first': 'qat-n3', 'cool': 0, 'lock': 1200, 'start_below': 50}, 'model': 'xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4'}
 lock {'mhz': 1200}
 server-start {'tag': 'qat-n3', 'draft': 'google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant', 'n': 3}
+server-healthy {'tag': 'qat-n3'}
+arm-start {'arm': 'qat-n3', 'temp_c': 64}
+arm-end {'arm': 'qat-n3', 'temp_c': 71}
+server-start {'tag': 'none', 'draft': None, 'n': None}
+server-healthy {'tag': 'none'}
+arm-start {'arm': 'none', 'temp_c': 74}
+arm-end {'arm': 'none', 'temp_c': 77}
+unlock {}
