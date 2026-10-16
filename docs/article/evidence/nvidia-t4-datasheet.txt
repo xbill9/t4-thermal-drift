@@ -1,0 +1,85 @@
+Source: https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet-951643.pdf, fetched 2026-10-16, pdftotext -layout
+                                            NVIDIA T4
+                                    TENSOR CORE GPU
+
+
+
+
+GPU Acceleration Goes Mainstream
+NVIDIA T4 enterprise GPUs supercharge the world’s most
+trusted mainstream servers, easily fitting into standard data
+center infrastructures. Its low-profile, 70-watt (W) design
+is powered by NVIDIA Turing™ Tensor Cores, delivering                                                                SPECIFICATIONS
+                                                                                                                     GPU Architecture       NVIDIA Turing
+revolutionary multi-precision performance to accelerate a wide                                                       NVIDIA Turing Tensor
+                                                                                                                                            320
+                                                                                                                     Cores
+range of modern applications, including machine learning, deep
+                                                                                                                     NVIDIA CUDA Cores
+                                                                                                                                    ®
+                                                                                                                                            2,560
+learning, and virtual desktops. This advanced GPU is packaged                                                        Single-Precision       8.1 TFLOPS
+in an energy-efficient 70 W, small PCIe form factor, optimized for                                                   Mixed-Precision
+                                                                                                                                            65 TFLOPS
+                                                                                                                     (FP16/FP32)
+maximum utility in enterprise data centers and the cloud.                                                            INT8                   130 TOPS
+                                                                                                                     INT4                   260 TOPS
+                                                                                                                     GPU Memory             16 GB GDDR6
+                                                                                                                                            300 GB/sec
+Inference Performance
+                                                                                                                     ECC                    Yes
+         GNMT                                                                                          36X           Interconnect
+                                                                                                                                            32 GB/sec
+   ResNet-50                                                                     27X                                 Bandwidth
+DeepSpeech2                                                      21X                                                 System Interface       x16 PCIe Gen3
+            CPU                                                                                                      Form Factor            Low-Profile PCIe
+                   0           5X         10X         15X         20X           25X         30X        35X     40X   Thermal Solution       Passive
+Comparisons made of one NVIDIA Tesla T4 GPU and servers with a dual-socket Xeon Gold 6140 CPU.                       Compute APIs           CUDA, NVIDIA TensorRT™,
+                                                                                                                                            ONNX
+
+
+Training Performance
+ResNet-50                                                                                               9.3X
+
+        CPU
+
+               0         1X         2X       3X        4X        5X        6X          7X         8X     9X    10X
+
+Comparison made between dual NVIDIA Tesla T4 GPUs and servers with a dual-socket Xeon Gold 6140 CPU.
+
+
+
+
+                                                                                                                                             NVIDIA T4 | DataSheet | Mar19
+Performance to Drive Data Center Acceleration
+
+                                 The small-form-factor, 70-watt (W) design                                                             The NVIDIA T4 data center GPU is the
+                                 makes NVIDIA T4 optimized for scale-out                                                               ideal universal accelerator for distributed
+                                 servers, providing an incredible 50X higher                                                           computing environments. Revolutionary
+                                 energy efficiency compared to CPUs,                                                                   multi-precision performance accelerates
+                                 drastically reducing operational costs.                                                               deep learning and machine learning
+                                 In the last two years, NVIDIA’s inference                                                             training and inference, video transcoding,
+                                 platform has increased efficiency by over                                                             and virtual desktops. NVIDIA T4 supports
+                                 10X, and it remains the most energy-                                                                  all AI frameworks and network types,
+                                 efficient solution for distributed AI training                                                        delivering dramatic performance and
+                                 and inference.                                                                                        efficiency that maximize the utility of at-
+                                                                                                                                       scale deployments.
+
+
+
+                                 Turing Tensor Core technology with                                                                    Turing’s powerful RT Cores, combined
+                                 multi-precision computing for AI powers                                                               with NVIDIA RTX™ technology, enable
+                                 breakthrough performance from FP32 to                                                                 real-time ray-traced rendering, delivering
+                                 FP16 to INT8, as well as INT4 precisions.                                                             photorealistic objects and environments
+                                 It delivers up to 9.3X higher performance                                                             with physically accurate shadows,
+                                 than CPUs on training and up to 36X on                                                                reflections, and refractions.
+                                 inference.
+
+
+
+
+To learn more about the NVIDIA T4, visit www.nvidia.com/T4
+© 2019 NVIDIA Corporation. All rights reserved. NVIDIA, the NVIDIA logo, NVIDIA Turing, CUDA, and TensorRT are trademarks and/or
+registered trademarks of NVIDIA Corporation in the U.S. and other countries. All other trademarks and copyrights are the property of
+their respective owners. Mar19
+

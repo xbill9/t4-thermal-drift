@@ -1,0 +1,10 @@
+5min soak 45-49C 115.3 -> 75-79C 106.9: -7.3% ; -> after 2 min 106.8: -7.4%
+soak 1 55-59C 112.7 -> 75-79C 105.6: -6.3%
+locked 65-69C 104.8 -> 75-79C 104.1: -0.7%
+locked after 2 min 104.1 vs unlocked after 2 min 105.6: -1.4% ; vs 106.8: -2.5% ; vs cool 115.3: -9.7%
+SM 1457 -> 1267: -13.0% ; 1390 -> 1241: -10.7%
+power at 1200 MHz 62.0 W (66C) -> 66.0 W (78C): 4.0 W
+order speed-up spread no cool-down: 1.279 to 1.337, difference 0.058
+samples total 154815
+none second vs first, no cool: -2.5%  qat second vs first: -1.9%
+cool time 71C->50 incl stop: 223 s 197 s

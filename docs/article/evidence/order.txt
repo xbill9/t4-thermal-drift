@@ -1,0 +1,6 @@
+order-cool50-nonefirst                     none>qat-n3  none: 111.1 tok/s n=18 56->71 C  qat-n3: 144.3 tok/s n=18 56->70 C  speed-up 1.298x
+order-cool50-qatfirst                      qat-n3>none  qat-n3: 144.6 tok/s n=18 56->71 C  none: 111.5 tok/s n=18 55->71 C  speed-up 1.297x
+order-lock1200-nonefirst-lockedbeforecool               
+order-lock1200-qatfirst                    qat-n3>none  qat-n3: 123.0 tok/s n=18 64->71 C  none: 103.8 tok/s n=18 74->77 C  speed-up 1.185x
+order-nocool-nonefirst                     none>qat-n3  none: 111.3 tok/s n=18 56->71 C  qat-n3: 142.3 tok/s n=18 64->76 C  speed-up 1.279x
+order-nocool-qatfirst                      qat-n3>none  qat-n3: 145.1 tok/s n=18 56->65 C  none: 108.5 tok/s n=18 63->77 C  speed-up 1.337x

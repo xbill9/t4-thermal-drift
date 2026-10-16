@@ -1,0 +1,6 @@
+FP32 TFLOPS = 2,560 CUDA cores x 2 operations per clock x SM clock
+clock implied by the published 8.1 TFLOPS: 1582 MHz
+1590 MHz -> 8.14 TFLOPS 100.0 % of 1590
+1430 MHz -> 7.32 TFLOPS 89.9 % of 1590
+1241 MHz -> 6.35 TFLOPS 78.1 % of 1590
+1200 MHz -> 6.14 TFLOPS 75.5 % of 1590

@@ -4,17 +4,7 @@ matched to the 100 ms GPU samples taken while its tokens streamed.
     python3 analyze.py RUN_DIR [RUN_DIR ...]
 """
 import json,csv,bisect,datetime,statistics as s,sys
-def load(d):
-    G=[]
-    for row in csv.reader(open(d+'/gpu.csv')):
-        try:
-            t=datetime.datetime.strptime(row[0].strip(),'%Y/%m/%d %H:%M:%S.%f').replace(tzinfo=datetime.timezone.utc).timestamp()
-            G.append((t,int(row[1]),int(row[2]),float(row[4]),int(row[5],16)))
-        except Exception: pass
-    R=[json.loads(l) for l in open(d+'/requests.jsonl')]
-    return G,R
-def during(G,ts,r):
-    tt=r['token_times']; return G[bisect.bisect(ts,tt[0]):bisect.bisect(ts,tt[-1])]
+from analyze_lib import load,during
 for d in sys.argv[1:]:
     G,R=load(d); ts=[g[0] for g in G]
     print('==',d)

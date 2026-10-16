@@ -1,0 +1,65 @@
+== soak-unlocked-1: requests 486, below 95 tok/s 1
+first request: 112.7 tok/s at 59 C, SM 1390 MHz
+band       n   median tok/s  median SM MHz  median power W  power-capped %
+55-59 C     1        112.7           1390            68.5             100
+60-64 C     5        112.2           1389            68.3              99
+65-69 C     6        110.8           1346            67.8             100
+70-74 C     7        108.0           1296            67.2             100
+75-79 C   462        105.6           1241            66.8             100
+80-84 C     4        103.5           1204            66.2             100
+after 2 min: n 437, median 105.6 tok/s, trend +0.03 tok/s per 10 min, temp 76-78 C, SM median 1241 MHz
+r(decode, temperature) -0.86  r(decode, SM clock) 0.80
+== soak-unlocked-5min-1: requests 125, below 95 tok/s 0
+first request: 113.4 tok/s at 44 C, SM 1430 MHz
+band       n   median tok/s  median SM MHz  median power W  power-capped %
+40-44 C     1        113.4           1430            69.2              89
+45-49 C     4        115.3           1457            69.3             100
+50-54 C     5        114.4           1436            69.2             100
+55-59 C     5        113.5           1404            68.9             100
+60-64 C     7        112.4           1384            68.8             100
+65-69 C    10        111.1           1350            68.2             100
+70-74 C     8        109.4           1316            67.8             100
+75-79 C    81        106.9           1267            66.9             100
+80-84 C     4        105.2           1231            66.7             100
+after 2 min: n 73, median 106.8 tok/s, trend +1.01 tok/s per 10 min, temp 76-80 C, SM median 1266 MHz
+r(decode, temperature) -0.97  r(decode, SM clock) 0.99
+== soak-locked1200-1: requests 479, below 95 tok/s 0
+first request: 105.3 tok/s at 66 C, SM 1200 MHz
+band       n   median tok/s  median SM MHz  median power W  power-capped %
+65-69 C     5        104.8           1200            63.4               0
+70-74 C     7        104.5           1200            64.3               1
+75-79 C   460        104.1           1198            66.1              29
+80-84 C     7        103.0           1186            66.2              74
+after 2 min: n 431, median 104.1 tok/s, trend +0.04 tok/s per 10 min, temp 76-78 C, SM median 1198 MHz
+r(decode, temperature) -0.64  r(decode, SM clock) 0.75
+power at a held 1200 MHz, not capped (6485 samples of 100 ms):
+  66 C n=   16 median 62.0 W
+  67 C n=   19 median 62.9 W
+  68 C n=   19 median 63.4 W
+  69 C n=   24 median 63.8 W
+  70 C n=   22 median 64.0 W
+  71 C n=   25 median 64.1 W
+  72 C n=   26 median 64.3 W
+  73 C n=   29 median 64.3 W
+  74 C n=   23 median 65.1 W
+  75 C n=  110 median 65.8 W
+  76 C n=  261 median 65.7 W
+  77 C n= 5564 median 65.8 W
+  78 C n=  271 median 66.0 W
+  79 C n=   29 median 65.7 W
+  80 C n=   28 median 66.1 W
+  81 C n=   16 median 65.8 W
+  slope 0.26 W per C
+  power-capped share of samples during requests: 29%
+== clock event reasons seen, all runs (0x1 idle, 0x4 SW power cap, 0x8 HW slowdown, 0x20 SW thermal, 0x40 HW thermal)
+curve                                         samples  83720 reasons ['0x1', '0x4'] max temp 83 C
+order-cool50-nonefirst                        samples   5457 reasons ['0x1', '0x4'] max temp 72 C
+order-cool50-qatfirst                         samples   4582 reasons ['0x1', '0x4'] max temp 72 C
+order-lock1200-nonefirst-lockedbeforecool     samples  13686 reasons ['0x1'] max temp 79 C
+order-lock1200-qatfirst                       samples   6002 reasons ['0x1', '0x4'] max temp 81 C
+order-nocool-nonefirst                        samples   4396 reasons ['0x1', '0x4'] max temp 76 C
+order-nocool-qatfirst                         samples   3827 reasons ['0x1', '0x4'] max temp 77 C
+soak-locked1200-1                             samples  13352 reasons ['0x1', '0x4'] max temp 81 C
+soak-unlocked-1                               samples  13384 reasons ['0x1', '0x4'] max temp 81 C
+soak-unlocked-2                               samples   2900 reasons ['0x1'] max temp 69 C
+soak-unlocked-5min-1                          samples   3509 reasons ['0x1', '0x4'] max temp 80 C
